@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</Form></title>
+</head>
+<body style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(108,109,253,255) 35%, rgba(37,133,252,255) 100%);">
+    
+    <h3 style="color: white; text-align: right; margin:0; padding-right: 70px; padding-top: 50px;">
+
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="enquiry.html">Enquiries</a>
+        <a href="login.html">Login</a>
+       </h3>
+
+    <div class="container">
+     
+        <form method="post" action="php/enquiryform.php" class="form" name="enq_form">    
+           
+            <div class="input">
+                <tr>    
+                    <td>    
+                        <h2>Enquiry Form</h2>  
+                    </td>     
+                </tr>   
+                <table>    
+                    <tr>    
+                        <td>    
+                            <input type="text" name="name" class="input-field" placeholder="Name" id="contact-name" onkeyup="validateName()">    
+                        </td>  
+                        <span id="name-error"></span>  
+                    </tr>  
+                    <tr>    
+                        <td>    
+                            <input type="number" name="number" class="input-field" placeholder="phonenumber" id="contact-phone" onkeyup="validatePhone()">    
+                        </td>  
+                        <span id="phone-error"></span>    
+                    </tr>   
+                    <tr>    
+                        <td>    
+                            <input type="email" name="email" class="input-field" placeholder="email@gmail.com" id="contact-email" onkeyup="validateEmail()">    
+                        </td>  
+                        <span id="email-error"></span>    
+                    </tr>   
+                    <tr>                          
+                            <td>    
+                                <input type="text" name="enquiry" class="enq-input-field" placeholder="enquiry" id="contact-enquiry" onkeyup="validateEnquiry()">    
+                            </td>   
+                            <span id="enquiry-error"></span>  
+                      
+                    </tr>   
+             </div>   
+                    <tr>    
+                        <td>    
+                          <input type="submit" name="submit" class="submitbtn" value="Submit" onclick="return validateForm()">
+                          <span id="submit-error"></span>
+
+                          <input type="reset" class="resetbtn" value="Refresh">   
+                        <button>
+                            <a style="color: purple;" href="http://localhost:3000/php/enquirycheck.php">Check on an Enquiry</a>
+                        </button>    </td>    
+                    </tr>             
+                </table>   
+           
+        </form>   
+
+    </div>
+     
+    <style>
+
+        form{
+            width: 400px;
+            height: 500px;
+            margin: 100px auto;
+            border-radius: 5px;
+            background-color: lightgrey;
+        }
+        
+        .container .input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        
+        .container .input .input-field{
+        margin: 18px 0;
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 5px;
+        width: 100%;
+        }
+        
+        .container .submitbtn .resetbtn{
+            background-color: purple;
+            color: white;
+            padding: 6px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .enq-input-field{
+            margin: 18px 0;
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 5px;
+            width: 100%;
+            height: 50px;
+        }
+
+        span{
+            /* position: absolute;
+            bottom: 12px;
+            right: 17px; */
+            font-size: 14px; 
+            color: red;
+        }
+
+            </style>
+
+ <script src="scripts/enquiryform.js"></script>
+
+</body>
+</html>

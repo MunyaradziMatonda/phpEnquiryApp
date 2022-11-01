@@ -1,0 +1,153 @@
+a:link{text-decoration: none;}
+a:visited{text-decoration: rgb(136, 116, 206);}
+a:hover{text-decoration: rgb(136, 116, 206);}
+a:active{text-decoration-color: black;}
+
+h2{
+color:#100272 ;
+}
+
+p{
+  font-size: 20px;
+}
+
+i{
+  font-size: 25px;
+  color: grey;
+}
+
+li{
+  font-size: 20px;
+}
+
+#div1{
+    height: 800px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(108,109,253,255) 35%, rgba(37,133,252,255) 100%);
+color: white;
+text-justify: distribute-all-lines;
+text-align: center;
+padding:0;
+font-size: 25px;
+padding-bottom: 30%;
+}
+
+.logo{
+text-align: left;
+}
+
+a{
+  margin-right: 20px;
+color: white;
+}
+
+.p1{
+text-align: center;
+}
+
+.team{
+    background-image: url('team_meeting.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1800px 1300px;
+   color: white;
+text-justify: distribute-all-lines;
+text-align: center;
+padding:0;
+font-size: 25px;
+
+   
+color: white;
+text-justify: distribute-all-lines;
+text-align: center;
+padding: 15px;
+font-size: 25px;
+   }
+
+  
+   * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  .centerimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-top: 4%;
+    padding-left: 32%;
+    padding-bottom: 5%;
+  }
+
+  #div3{
+    font-family: Arial, Helvetica, sans-serif;
+
+    float: right;
+    text-align: left;
+  
+    display: block;
+ justify-content: center;
+     margin-top: 5%; 
+     margin-right: 10%;
+     margin-left: 55%;
+     
+  }
+
+  #div4{
+  
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+  text-align: left;
+  display:block;
+  text-justify: center; 
+  margin: 5%;
+   margin-right: 55%; 
+   margin-left: 10%;
+   
+  }
+
+  #div2{
+    padding: 2%;
+  color: white;
+         background-color: rgb(27, 27, 34);
+        position: absolute;
+        top: auto;
+        right: 5px;
+        width: 100%;
+        height: max-content;
+        text-align: center;
+        justify-content: space-evenly;
+ 
+ }
+
+
+ .singleCol{
+   
+  width: 2000px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+ 
+
+}
+
+
+.social-media-icon-white a{
+  color: white;
+  font-size: 5rem;
+  right: 10px;
+
+}
